@@ -59,7 +59,6 @@ public class ConvidadoController {
         RestTemplate restTemplate = new RestTemplate();
 
         HttpHeaders headers = new HttpHeaders();
-        headers.set("Accept", MediaType.TEXT_PLAIN_VALUE);
 
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl("http://localhost:8000/email/send")
                 .queryParam("name", nome)
